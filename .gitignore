@@ -8,6 +8,7 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 node_modules
+docs/CNAME
 *.local
 
 # Editor directories and files
