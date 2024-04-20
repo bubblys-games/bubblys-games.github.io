@@ -5,8 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bubbly's Symphony: Guardians of the Depths</title>
-    <script type="module" crossorigin src="/assets/index-lHxUPnOv.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BNaMoWoH.css">
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect.split('/').slice(3).join('/'));
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-nIPPTLIE.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bn3b4vHC.css">
   </head>
   <body>
     <div id="root"></div>
