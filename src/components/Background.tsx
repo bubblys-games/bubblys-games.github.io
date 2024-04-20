@@ -14,9 +14,11 @@ const Ocean = styled.div`
         position: absolute;
         top: 0;
         left: 0;
-        width: 400%; /* Updated to twice the width of the container */
-        height: 150%;
+        width: 200%;
+        height: 100%;
         animation: waveMove 15s linear infinite;
+        transform: translate3D(0, 0, 0); /* Hardware acceleration */
+        will-change: transform; /* Optimize for changes in transformation */
     }
 
     @keyframes waveMove {
@@ -32,7 +34,7 @@ const Ocean = styled.div`
 export default function BackgroundContainer() {
     return (
         <Ocean>
-            <svg viewBox="0 0 240 200" preserveAspectRatio="none">
+            <svg viewBox="0 0 480 200" preserveAspectRatio="none">
                 <defs>
                     <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%" style={{'stopColor': '#77bab2'}} />
@@ -40,7 +42,7 @@ export default function BackgroundContainer() {
                         <stop offset="100%" style={{'stopColor': '#398e91'}} />
                     </linearGradient>
                 </defs>
-                <path d="M0 30 Q 30 20 60 30 T 120 30 T 180 30 T 240 30 V 200 H 0 Z" fill="url(#waveGradient)"></path>
+                <path d="M0 30 Q 60 25 120 30 T 240 30 T 360 30 T 480 30 V 200 H 0 Z" fill="url(#waveGradient)"></path>
             </svg>
         </Ocean>
     )
