@@ -146,7 +146,7 @@ Error generating stack: `+i.message+`
     box-sizing: border-box;
     position: relative;
     height: 40vh;
-    margin: 36px 0 0 0;
+    margin: 20px 0 0 0;
     overflow-y: scroll;
 
     /* Hide scrollbar for IE, Edge and Firefox */
@@ -157,6 +157,18 @@ Error generating stack: `+i.message+`
     :-webkit-scrollbar {
         display: none;
     }
+
+    @media only screen and (max-width: 768px) {
+      height: 52vh;
+    }
+    
+    @media only screen and (max-width: 480px) {
+        height: 48vh;
+    }
+
+    @media only screen and (max-width: 375px) {
+        height: 32vh;
+    }
 `;function dy(){return x.jsxs(x.Fragment,{children:[x.jsx(qu,{}),x.jsx(r1,{}),x.jsxs(cy,{children:[x.jsx("header",{children:x.jsx("h2",{children:"Terms of Service"})}),x.jsxs(fy,{children:[x.jsxs("ol",{children:[x.jsxs("li",{children:["Introduction",x.jsx("p",{children:`Welcome to Bubbly's Symphony: Guardians of the Depths ("Game") operated by Seungmin Lee ("us", "we", or "our"). These Terms of Service govern your use of our game available on various platforms and devices. By accessing or using our game, you agree to be bound by these Terms and all applicable laws and regulations.`})]}),x.jsxs("li",{children:["License to Use",x.jsx("p",{children:"We grant you a non-exclusive, non-transferable, revocable license to use the Game for your personal, non-commercial purposes. You agree not to use the Game for any other purpose without our prior written consent."})]}),x.jsxs("li",{children:["User Conduct",x.jsxs("ol",{children:["You agree not to use the Game to:",x.jsx("li",{children:"Upload, post, email, or otherwise transmit any material that contains software viruses or any other computer code, files, or programs designed to interrupt, destroy, or limit the functionality of any computer software or hardware."}),x.jsx("li",{children:"Upload, post, email, or otherwise transmit any material that contains software viruses or any other computer code, files, or programs designed to interrupt, destroy, or limit the functionality of any computer software or hardware."}),x.jsx("li",{children:"Violate any applicable local, state, national, or international law."}),x.jsx("li",{children:"Harass, abuse, or harm another person."})]})]}),x.jsxs("li",{children:["Intellectual Property Rights",x.jsx("p",{children:"All rights, title, and interest in and to the Game (excluding content provided by users) are and will remain the exclusive property of Seungmin Lee. The Game is protected by copyright, trademark, and other laws of both South Korea and foreign countries."})]}),x.jsxs("li",{children:["Disclaimer of Warranties",x.jsx("p",{children:'The Game is provided on an "AS IS" and "AS AVAILABLE" basis. We disclaim all warranties of any kind, whether express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.'})]}),x.jsxs("li",{children:["Limitation of Liability",x.jsx("p",{children:"In no event shall Seungmin Lee, nor his or her employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the Game."})]}),x.jsxs("li",{children:["Governing Law",x.jsx("p",{children:"These Terms shall be governed and construed in accordance with the laws of South Korea, without regard to its conflict of law provisions."})]}),x.jsxs("li",{children:["Changes to Terms",x.jsx("p",{children:"We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect."})]}),x.jsxs("li",{children:["Contact Us",x.jsx("p",{children:"If you have any questions about these Terms, please contact us at contact@bubblys.games."})]})]}),x.jsx("section",{children:x.jsx("h3",{children:"Effective Date: May 19, 2024"})})]})]}),x.jsx(Ju,{})]})}const py=Et.article`
     padding: 20px 40px 0;
     text-align: left;
@@ -165,7 +177,7 @@ Error generating stack: `+i.message+`
     box-sizing: border-box;
     position: relative;
     height: 40vh;
-    margin: 36px 0 0 0;
+    margin: 20px 0 0 0;
     overflow-y: scroll;
 
     /* Hide scrollbar for IE, Edge and Firefox */
@@ -175,5 +187,17 @@ Error generating stack: `+i.message+`
     /* Hide scrollbar for Chrome, Safari and Opera */
     :-webkit-scrollbar {
         display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        height: 52vh;
+    }
+    
+    @media only screen and (max-width: 480px) {
+        height: 48vh;
+    }
+
+    @media only screen and (max-width: 375px) {
+        height: 32vh;
     }
 `;function my(){return x.jsxs(x.Fragment,{children:[x.jsx(qu,{}),x.jsx(r1,{}),x.jsxs(py,{children:[x.jsx("header",{children:x.jsx("h2",{children:"Privacy Policy"})}),x.jsxs(hy,{children:[x.jsxs("section",{children:[x.jsx("h3",{children:"Introduction"}),x.jsx("p",{children:"Welcome to Bubbly's Symphony: Guardians of the Depths! Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you play our game. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the game."})]}),x.jsxs("section",{children:[x.jsx("h3",{children:"Information Collection and Use"}),x.jsxs("ol",{children:[x.jsxs("li",{children:["User Content for Ads",x.jsxs("ul",{children:[x.jsx("li",{children:"Type of Information Collected: We may collect information that you provide directly or through user interaction with in-game advertising content. This may include engagement data or preferences within ads."}),x.jsx("li",{children:"Purpose of Collection: The information is used to deliver personalized advertising content provided by third-party advertisers, to enhance user experience, and improve ad relevance."}),x.jsx("li",{children:"Sharing of Information: We may share this information with third-party advertising partners in compliance with our contractual obligations and privacy standards."})]})]}),x.jsxs("li",{children:["Player Name for Results Page",x.jsxs("ul",{children:[x.jsx("li",{children:"Type of Information Collected: We collect player names that you submit for the purpose of displaying them on game results pages."}),x.jsx("li",{children:"Purpose of Collection: This information is used to identify player scores and rankings in the game’s results page."}),x.jsx("li",{children:"Storage and Protection: Player names are not stored beyond the scope of the game session."})]})]})]})]}),x.jsxs("section",{children:[x.jsx("h3",{children:"Third-Party Service Providers"}),x.jsx("p",{children:"We may share your information with third parties that perform services for us or on our behalf, including data analysis, email delivery, hosting services, customer service, and marketing assistance."}),x.jsx("ul",{children:x.jsx("li",{children:x.jsx("a",{href:"https://policies.google.com/privacy?hl=en",target:"blank",children:"Google AdMob Privacy Policy"})})})]}),x.jsxs("section",{children:[x.jsx("h3",{children:"Marketing Communications"}),x.jsx("p",{children:"With your consent, we may send you emails about new product features, special offers, and other updates. You have the right at any time to stop us from contacting you for marketing purposes."})]}),x.jsxs("section",{children:[x.jsx("h3",{children:"Legal Basis for Processing"}),x.jsx("p",{children:"We process your information under the following legal bases:"}),x.jsxs("ul",{children:[x.jsx("li",{children:"Your consent;"}),x.jsx("li",{children:"The necessity to fulfill our contractual obligations to you;"}),x.jsx("li",{children:"The necessity for compliance with a legal obligation;"}),x.jsx("li",{children:"The necessity to protect your vital interests;"}),x.jsx("li",{children:"The necessity for the performance of a task carried out in the public interest;"}),x.jsx("li",{children:"The necessity for the purposes of legitimate interests pursued by us or a third party."})]})]}),x.jsxs("section",{children:[x.jsx("h3",{children:"Your Data Protection Rights"}),x.jsx("p",{children:"You have certain rights under applicable data protection laws. These may include the right to (i) request access and obtain a copy of your personal information, (ii) request rectification or erasure; (iii) restrict the processing of your personal information; and (iv) if applicable, to data portability."})]}),x.jsxs("section",{children:[x.jsx("h3",{children:"Children's Privacy"}),x.jsx("p",{children:"Our game does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us."})]}),x.jsxs("section",{children:[x.jsx("h3",{children:"Changes to This Privacy Policy"}),x.jsx("p",{children:"We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page."})]}),x.jsxs("section",{children:[x.jsx("h3",{children:"Contact Us"}),x.jsx("p",{children:"If you have any questions about this Privacy Policy, please contact us at privacy@bubblys.games."})]}),x.jsx("section",{children:x.jsx("h3",{children:"Effective Date: May 19, 2024"})})]})]}),x.jsx(Ju,{})]})}const vy=n2([{path:"/",element:x.jsx(ay,{}),errorElement:x.jsx(Yo,{})},{path:"/terms",element:x.jsx(dy,{}),errorElement:x.jsx(Yo,{})},{path:"/privacy",element:x.jsx(my,{}),errorElement:x.jsx(Yo,{})}]);Xo.createRoot(document.getElementById("root")).render(x.jsx(L.StrictMode,{children:x.jsx(f2,{router:vy})}));
