@@ -8,16 +8,22 @@ import styled from '@emotion/styled'
 import { Link } from "react-router-dom"
 
 const Main = styled.main`
-    margin-top: 20px;
+    margin: 20px auto;
 `
 
 const DownloadsContainer = styled.div`
-    padding: 20px 0 40px;
+    margin-bottom: 40px;
 `
 
 const SliderContainer = styled.div`
-    margin-bottom: 80px;
+    img {
+        display: block;
+    }
 `
+
+const images = [
+    screenshot01, screenshot02, screenshot03
+]
 
 export default function MainContainer() {
     return (
@@ -28,7 +34,7 @@ export default function MainContainer() {
                 </Link>
             </DownloadsContainer>
             <SliderContainer>
-                <ImageSlider images={[screenshot01, screenshot02, screenshot03]}/>
+                <ImageSlider images={images}/>
             </SliderContainer>
         </Main>
     )
