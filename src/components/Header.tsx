@@ -4,14 +4,12 @@ import { Link } from "react-router-dom"
 import styled from '@emotion/styled'
 
 const Header = styled.header`
-    padding: 40px 40px 0;
+    margin: 88px 40px 20px;
     text-align: left;
+    animation: float 4s ease-in-out infinite;
     
     img {
         width: 120px;
-    }
-    img:hover {
-        animation: float 1.2s ease-in-out infinite;
     }
 
     @keyframes float {
