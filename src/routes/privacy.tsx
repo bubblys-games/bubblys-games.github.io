@@ -5,9 +5,12 @@ import Footer from '../components/Footer'
 import styled from '@emotion/styled'
 
 const Article = styled.article`
-    padding: 20px 40px 0;
+    margin: 20px;
+    padding: 20px;
     text-align: left;
     color: #424242;
+    background-color: #ffffff44;
+    border-radius: 8px;
 `
 
 const Main = styled.main`

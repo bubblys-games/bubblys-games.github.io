@@ -14,9 +14,57 @@ const SliderWrapper = styled.div`
 `;
 
 const Slide = styled.div`
+  position: relative;
   flex: 0 0 auto;
   width: 100%;
 `;
+
+const TextOverlay = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, rgba(65, 65, 65, 0), rgba(65, 65, 65, 1));
+
+  p {
+    padding: 120px 0 20px 20px;
+  }
+
+  em {
+    font-size: 72px;
+    text-transform: uppercase;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+
+    p {
+      padding: 64px 0 16px 16px;
+    }
+  
+    em {
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    font-size: 12px;
+
+    p {
+      padding: 48px 0 12px 12px;
+    }
+  
+    em {
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+`
 
 const SliderDots = styled.div`
   position: absolute;
@@ -35,22 +83,27 @@ const Dot = styled.span<{ isActive: boolean }>`
   cursor: pointer;
 `;
 
-interface ImageSliderProps {
-  images: string[];
+interface Slide {
+  imageUrl: string;
+  text: string;
 }
 
-const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
+interface ImageSliderProps {
+  slides: Slide[];
+}
+
+const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef<number | null>(null);
   const touchStart = useRef(0);
   const touchEnd = useRef(0);
 
   const nextSlide = () => {
-    setCurrentIndex(current => current === images.length - 1 ? 0 : current + 1);
+    setCurrentIndex(current => current === slides.length - 1 ? 0 : current + 1);
   };
 
   const previousSlide = () => {
-    setCurrentIndex(current => current === 0 ? images.length - 1 : current - 1);
+    setCurrentIndex(current => current === 0 ? slides.length - 1 : current - 1);
   };
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -73,7 +126,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   };
 
   useEffect(() => {
-    intervalRef.current = window.setInterval(nextSlide, 3000);
+    intervalRef.current = window.setInterval(nextSlide, 4000);
     return () => {
       if (intervalRef.current) window.clearInterval(intervalRef.current);
     };
@@ -87,14 +140,15 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        {images.map((image, index) => (
+        {slides.map((slide, index) => (
           <Slide key={index}>
-            <img src={image} alt={`Slide ${index}`} style={{ width: '100%', height: 'auto' }} />
+            <img src={slide.imageUrl} alt={`Slide ${index}`} style={{ width: '100%', height: 'auto' }} />
+            <TextOverlay dangerouslySetInnerHTML={{ __html: slide.text }} />
           </Slide>
         ))}
       </SliderWrapper>
       <SliderDots>
-        {images.map((_, index) => (
+        {slides.map((_, index) => (
           <Dot key={index} isActive={index === currentIndex} onClick={() => setCurrentIndex(index)} />
         ))}
       </SliderDots>
