@@ -58,7 +58,6 @@ export default function Privacy() {
                                     </li>
                                     <li>
                                         Sharing of Information: We may share this information with third-party advertising partners in compliance with our contractual obligations and privacy standards.
-                
                                     </li>
                                 </ul>
                             </li>
@@ -146,7 +145,7 @@ export default function Privacy() {
                         </p>
                     </section>
                     <section>
-                        <h3>Effective Date: May 19, 2024</h3>
+                        <h3>Effective Date: May 25, 2024</h3>
                     </section>
                 </Main>
             </Article>
