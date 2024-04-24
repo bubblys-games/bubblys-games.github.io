@@ -3,9 +3,15 @@ import styled from '@emotion/styled';
 
 const SliderContainer = styled.div`
   position: relative;
+  margin: 0 auto;
   width: 100%;
   overflow: hidden;
+  border-radius: 8px;
   touch-action: pan-y; /* Prevents vertical scrolling when swiping horizontally */
+
+  @media only screen and (max-width: 1280px) {
+    width: 96%;
+  }
 `;
 
 const SliderWrapper = styled.div`
@@ -43,7 +49,7 @@ const TextOverlay = styled.div`
     font-size: 16px;
 
     p {
-      padding: 64px 0 16px 16px;
+      padding: 64px 0 20px 16px;
     }
   
     em {
@@ -56,7 +62,7 @@ const TextOverlay = styled.div`
     font-size: 12px;
 
     p {
-      padding: 48px 0 12px 12px;
+      padding: 48px 0 20px 12px;
     }
   
     em {
