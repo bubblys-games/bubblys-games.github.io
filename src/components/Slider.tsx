@@ -1,14 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from '@emotion/styled';
 
-interface ImageSliderProps {
-  images: string[]; // Array of image URLs
-}
-
 const SliderContainer = styled.div`
   position: relative;
   width: 100%;
   overflow: hidden;
+  touch-action: pan-y; /* Prevents vertical scrolling when swiping horizontally */
 `;
 
 const SliderWrapper = styled.div`
@@ -36,18 +33,43 @@ const Dot = styled.span<{ isActive: boolean }>`
   background-color: ${props => props.isActive ? '#888' : '#bbb'};
   border-radius: 50%;
   cursor: pointer;
-
-  :hover {
-    background-color: #444;
-  }
 `;
+
+interface ImageSliderProps {
+  images: string[];
+}
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef<number | null>(null);
+  const touchStart = useRef(0);
+  const touchEnd = useRef(0);
 
   const nextSlide = () => {
-    setCurrentIndex((current) => (current === images.length - 1 ? 0 : current + 1));
+    setCurrentIndex(current => current === images.length - 1 ? 0 : current + 1);
+  };
+
+  const previousSlide = () => {
+    setCurrentIndex(current => current === 0 ? images.length - 1 : current - 1);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEnd.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart.current - touchEnd.current > 50) {
+      // Swipe left, next slide
+      nextSlide();
+    }
+    if (touchStart.current - touchEnd.current < -50) {
+      // Swipe right, previous slide
+      previousSlide();
+    }
   };
 
   useEffect(() => {
@@ -59,7 +81,12 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
 
   return (
     <SliderContainer>
-      <SliderWrapper style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <SliderWrapper
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         {images.map((image, index) => (
           <Slide key={index}>
             <img src={image} alt={`Slide ${index}`} style={{ width: '100%', height: 'auto' }} />
