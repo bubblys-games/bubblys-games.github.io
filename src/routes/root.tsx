@@ -5,7 +5,6 @@ import BackgroundContainer from '../components/Background';
 import MainContainer from '../components/Main';
 import FooterContainer from '../components/Footer';
 
-
 export default function Root() {
     return (
       <>

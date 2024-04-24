@@ -5,7 +5,7 @@ const Ocean = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background: #eec6b4;
     z-index: -1;
