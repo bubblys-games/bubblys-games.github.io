@@ -13,9 +13,7 @@ const Article = styled.article`
 const Main = styled.main`
     box-sizing: border-box;
     position: relative;
-    height: 40vh;
     margin: 20px 0 0 0;
-    overflow-y: scroll;
 
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;  /* IE and Edge */
@@ -24,18 +22,6 @@ const Main = styled.main`
     /* Hide scrollbar for Chrome, Safari and Opera */
     :-webkit-scrollbar {
         display: none;
-    }
-
-    @media only screen and (max-width: 768px) {
-        height: 52vh;
-    }
-    
-    @media only screen and (max-width: 480px) {
-        height: 48vh;
-    }
-
-    @media only screen and (max-width: 375px) {
-        height: 32vh;
     }
 `
 
