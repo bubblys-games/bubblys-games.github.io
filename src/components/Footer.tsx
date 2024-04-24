@@ -3,12 +3,10 @@ import styled from '@emotion/styled'
 import { XLogo, InstagramLogo, YoutubeLogo, TwitchLogo, DiscordLogo } from "@phosphor-icons/react";
 
 const Footer = styled.footer`
+  box-sizing: border-box;
+  padding: 20px;
   width: 100%;
-  position: absolute;
-  left: 50%;
-  bottom: 2%;
   color: #5b3f3e;
-  transform: translateX(-50%);
 
   a {
     margin-right: 20px;
@@ -25,7 +23,7 @@ const Socials = styled.div`
 
   a {
     font-size: 36px;
-    color: #ffffff;
+    color: #ffffff !important;
   }
 `
 
