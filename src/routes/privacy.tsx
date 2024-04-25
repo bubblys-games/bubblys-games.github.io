@@ -41,7 +41,9 @@ export default function Privacy() {
                     <section>
                         <h3>Introduction</h3>
                         <p>
-                            Welcome to Bubbly's Symphony: Guardians of the Depths! Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you play our game. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the game.
+                            Welcome to Bubbly's Symphony: Guardians of the Depths, a mobile game developed by Seungmin Lee designed to provide entertainment across the globe. This Privacy Policy (“Policy”) outlines how Seungmin Lee (“We”, “Us”, or “Our”) collects, manages, uses, and shares your information when you (“You”, “Players” or “Users”) engage with our game and related services (collectively, the “Service”).
+                            <br /><br />
+                            This Policy applies solely to information collected through your use of the Service. It does not cover any information or actions of third parties, including other companies or individuals, who may use the information you provide to them or offer their own products and services. By accessing and using the Service, you consent to this Policy and to the processing of your information as described herein. If you disagree with any part of this Policy, please do not use the Service.
                         </p>
                     </section>
                     <section>
@@ -80,18 +82,31 @@ export default function Privacy() {
                     <section>
                         <h3>Third-Party Service Providers</h3>
                         <p>
-                            We may share your information with third parties that perform services for us or on our behalf, including data analysis, email delivery, hosting services, customer service, and marketing assistance.
+                            While this Privacy Policy addresses only the collection, use, and disclosure of information we collect from you, our Service connects you to external sites and includes services provided by third-party service providers. These external entities have their own privacy policies and data collection, use, and disclosure practices that may differ from ours.
                         </p>
                         <ul>
                             <li>
                                 <a href="https://policies.google.com/privacy?hl=en" target="blank">Google AdMob Privacy Policy</a>
                             </li>
                         </ul>
+                        <p>
+                            We do not control, and are not responsible for, the privacy practices of these third parties. Their information practices are not covered by this Privacy Policy. We encourage you to review the privacy policies of any third-party service provider or advertiser with whom you interact to understand their specific privacy and information usage practices. If you have questions about how they use your information, you should contact them directly.
+                        </p>
                     </section>
                     <section>
-                        <h3>Marketing Communications</h3>
+                        <h3>Data Security</h3>
+                        <p>We employ modern cryptography and secure handling procedures to protect the data we collect.</p>
+                    </section>
+                    <section>
+                        <h3>Data Retention and Deletion</h3>
                         <p>
-                            With your consent, we may send you emails about new product features, special offers, and other updates. You have the right at any time to stop us from contacting you for marketing purposes.
+                            Information is retained only as long as necessary to provide you with our services and for legitimate and essential business purposes, such as maintaining the performance of our game, making data-driven business decisions, complying with our legal obligations, and resolving disputes. We specify the retention time for data retention in our data retention policy available upon request.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Children's Privacy</h3>
+                        <p>
+                            Our game does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.
                         </p>
                     </section>
                     <section>
@@ -127,25 +142,25 @@ export default function Privacy() {
                         </p>
                     </section>
                     <section>
-                        <h3>Children's Privacy</h3>
+                        <h3>Marketing Communications</h3>
                         <p>
-                            Our game does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.
+                            With your consent, we may send you emails about new product features, special offers, and other updates. You have the right at any time to stop us from contacting you for marketing purposes.
                         </p>
                     </section>
                     <section>
                         <h3>Changes to This Privacy Policy</h3>
                         <p>
-                            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+                            We reserve the right to update our Privacy Policy at any time. We will notify you of any changes by posting the new policy on this page and updating the effective date.
                         </p>
                     </section>
                     <section>
                         <h3>Contact Us</h3>
                         <p>
-                            If you have any questions about this Privacy Policy, please contact us at privacy@bubblys.games.
+                            If you have any questions or suggestions about our Privacy Policy, please contact us at privacy@bubblys.games.
                         </p>
                     </section>
                     <section>
-                        <h3>Effective Date: May 25, 2024</h3>
+                        <h3>Effective Date: April 26, 2024</h3>
                     </section>
                 </Main>
             </Article>
