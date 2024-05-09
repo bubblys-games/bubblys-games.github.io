@@ -91,12 +91,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Configure custom domain
-        env:
-          CNAME: bubblys.games
-        run: |
-          echo "$CNAME" > ./out/CNAME
-      - name: Upload artifact with CNAME
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
