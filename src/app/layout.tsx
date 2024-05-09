@@ -18,6 +18,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="w-full min-h-full">
+      <head>
+        <link rel="icon" type="image" href="/icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bubbly's Symphony: Guardians of the Depths</title>
+        <meta name=" description" content="Embark on an underwater adventure with Bubbly and join a global community committed to protecting our oceans." />
+        <meta name="robots" content="index, nofollow" />
+        <meta property="og:title" content="Bubbly's Symphony: Guardians of the Depths" />
+        <meta property="og:url" content="https://bubblys.games" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Embark on an underwater adventure with Bubbly and join a global community committed to protecting our oceans." />
+        <meta property="og:image" content="/og-image.png" />
+      </head>
       <body className={`${inter.className} flex items-center justify-center m-0 p-0 w-full min-h-full`}>
         <div className="max-w-screen-xl h-screen mx-auto p-0 text-center">
           <BackgroundContainer />
