@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image" href="/icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bubbly's Symphony: Guardians of the Depths</title>
+        <title>Bubbly&apos;s Symphony: Guardians of the Depths</title>
         <meta name=" description" content="Embark on an underwater adventure with Bubbly and join a global community committed to protecting our oceans." />
         <meta name="robots" content="index, nofollow" />
         <meta property="og:title" content="Bubbly's Symphony: Guardians of the Depths" />
