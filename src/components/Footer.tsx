@@ -23,7 +23,9 @@ export default function FooterContainer() {
       <Link href="/terms" className="mr-5 text-[#eae6cf] text-md" onClick={scrollToTop}>Terms of Conduct</Link>
       <Link href="/privacy" className="mr-5 text-[#eae6cf] text-md" onClick={scrollToTop}>Privacy Policy</Link>
       <Link href="/support" className="mr-5 text-[#eae6cf] text-md" onClick={scrollToTop}>Support</Link>
-      <p className="my-4 text-[#5b3f3e] text-sm">© {new Date().getFullYear()} Seungmin Lee. All rights reserved.</p>
+      <p className="mt-4 text-[#5b3f3e] text-sm">&copy; {new Date().getFullYear()} Seungmin Lee. All rights reserved.</p>
+      <p className="my-1 text-[#5b3f3e] text-sm">"Pre-order on the App Store" and the App Store badge are trademarks of Apple Inc.</p>
+      <p className="my-1 text-[#5b3f3e] text-sm">Google Play and the Google Play logo are trademarks of Google LLC.</p>
     </footer>
   )
 }
