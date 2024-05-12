@@ -17,13 +17,13 @@
 }
 
 body {
+  height: 100%;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #f3c8c1;
+}
+
+a {
+  color: #4e82ae;
 }
 
 .no-scrollbar::-webkit-scrollbar {

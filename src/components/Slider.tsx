@@ -64,7 +64,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
       >
         {slides.map((slide, index) => (
           <div className="relative flex-shrink-0 w-full" key={index}>
-            <Image src={slide.image} alt={`Slide ${index}`} style={{ width: '100%', height: 'auto' }} />
+            <Image src={slide.image} alt={`Slide ${index}`} style={{ width: '100%', aspectRatio: 2.167 }} />
             <div className="absolute left-0 bottom-0 w-full text-white text-left bg-gradient-to-b from-transparent to-[#414141]">
               <p className="lg:pt-8 lg:pl-4 lg:pb-10 lg:text-xl md:pt-8 md:pl-4 md:pb-8 md:text-lg sm:pt-6 sm:pl-3 sm:pb-8 sm:text-sm pt-30 pl-3 pb-8 text-xs lg:leading-10 md:leading-8 sm:leading-6 leading-4 font-semibold">
                 {slide.texts[0]}
