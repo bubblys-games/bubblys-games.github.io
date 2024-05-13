@@ -6,7 +6,7 @@ import Screenshot02 from '../assets/screenshot02.png'
 import Screenshot03 from '../assets/screenshot03.png'
 import Screenshot04 from '../assets/screenshot04.png'
 
-import iosPreorderBanner from '../assets/Pre-order_on_the_App_Store_Badge_US-UK_RGB_blk_121217.svg'
+import iosPreorderBanner from '../assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg'
 import androidDownloadBanner from '../assets/en_badge_web_generic.png'
 import ImageSlider from '../components/Slider';
 
