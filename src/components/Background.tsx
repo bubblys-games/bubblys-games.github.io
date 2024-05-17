@@ -52,7 +52,7 @@ export default function BackgroundContainer() {
     <div className="absolute left-0 top-0 w-full h-full bg-[#f1c9b7] z-[-1]" ref={svgRef}>
       <svg className="absolute top-0 left-0 w-full h-full">
         <path d={generateWavePath(windowWidth, waveHeight, 1, 8)} fill="#77bab2" />
-        <rect x="0" y={waveHeight} width="100%" height={`calc(100% - ${waveHeight}px)`} fill="url(#waveGradient)" />
+        <rect x="0" y={waveHeight - 1} width="100%" height={`calc(100% - ${waveHeight}px)`} fill="url(#waveGradient)" />
         <defs>
           <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" style={{ stopColor: '#77bab2' }} />

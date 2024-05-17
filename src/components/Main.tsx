@@ -34,7 +34,7 @@ export default function MainContainer() {
         <main className="mt-5">
             <div className="mb-8">
                 <Link href="https://apps.apple.com/us/app/bubblys-symphony/id6496065699">
-                    <Image src={iosPreorderBanner} className="inline-flex" alt="Pre-order on the App Store" />
+                    <Image src={iosPreorderBanner} className="inline-flex ml-3" alt="Pre-order on the App Store" />
                 </Link>
                 <Link href='https://play.google.com/store/apps/details?id=com.luovanori.bubbly&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                     <Image alt='Get it on Google Play' src={androidDownloadBanner} height="60" className="inline-flex" />
