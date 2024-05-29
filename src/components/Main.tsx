@@ -40,6 +40,11 @@ export default function MainContainer() {
                     <Image alt='Get it on Google Play' src={androidDownloadBanner} height="60" className="inline-flex" />
                 </Link>
             </div>
+            <div className="flex justify-center mb-8">
+                <iframe style={{border: 0, width: 400, height: 120}} src="https://bandcamp.com/EmbeddedPlayer/album=3615477529/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
+                    <a href="https://luovanori.bandcamp.com/album/bubblys-symphony-guardians-of-the-depths-original-game-soundtrack">Bubbly&#39;s Symphony: Guardians of the Depths (Original Game Soundtrack) by Studio Luovanori</a>
+                </iframe>
+            </div>
             <div>
                 <ImageSlider slides={slides}/>
             </div>
