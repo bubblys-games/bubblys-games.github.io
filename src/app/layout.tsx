@@ -29,7 +29,6 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Embark on an underwater adventure with Bubbly and join a global community committed to protecting our oceans." />
         <meta property="og:image" content="/og-image.png" />
-        <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16527790383">
         </script>
         <script>
