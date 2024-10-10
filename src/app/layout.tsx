@@ -29,6 +29,16 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Embark on an underwater adventure with Bubbly and join a global community committed to protecting our oceans." />
         <meta property="og:image" content="/og-image.png" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16527790383">
+        </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'AW-16527790383');
+        </script>
       </head>
       <body className={`${inter.className} flex items-center justify-center m-0 p-0 w-full min-h-full`}>
         <div className="max-w-screen-xl h-screen mx-auto p-0 text-center">
